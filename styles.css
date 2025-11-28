@@ -25,15 +25,18 @@ a {
 
     position: absolute;
     top: 4rem;
-    left: 5rem;
-
-
+    left: 0%;
+    
+    padding-left: 5rem;
+    width: clac(100vw - 5rem);
+    transform: translate(-0%, 0%);
     display: flex;
     gap: 1rem;
+
 }
 
 .heading h1 {
-    font-size: 7rem;
+    font-size: 12vw;
     margin: 0;
     color: #f8c87930;
 }
@@ -67,6 +70,8 @@ a {
     border: 1px solid #f8c87920;
     box-shadow: 0 0 20px #f8c8790a;
 
+    width: 4rem;
+
     background-color: var(--bg);
 }
 
@@ -93,4 +98,60 @@ a {
     color: #f8c879e0;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+
+#portrait {
+    width: 90%;
+    border-radius: 20px;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .images {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        position: relative;
+    }
+
+    #landing-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+
+    #portrait {
+        width: 100%;
+        border-radius: 0;
+
+        filter: brightness(0.8);
+    }
+
+    .heading {
+        top: 5%;
+        left: 0%;
+
+        padding: 0;
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading h1 {
+        font-size: 14vw;     
+    }
+
+
+    #circle-center {
+        font-size: 2rem;
+    }
 }

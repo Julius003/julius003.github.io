@@ -34,21 +34,17 @@ body {
 
 .section {
     display: flex;
-
+    justify-content: center;
 }
 
 .images {
+    position: relative;
     height: 100vh;
     width: 43%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-img {
-    width: 90%;
-    border-radius: 20px;
 }
 
 .content {
@@ -61,4 +57,17 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+
+@media (max-width: 750px) {
+    .content {
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        position: absolute;
+        top: 30%;
+    }
 }
