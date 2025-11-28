@@ -1,4 +1,5 @@
 .social {
+    width: 100%;
     display: flex;
     gap: 4rem;
 
@@ -54,4 +55,13 @@
 @keyframes shimmer {
     0% { left: -200%; }
     100% { left: 200%; }
+}
+
+
+@media (max-width: 600px) {
+    .social {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
