@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       item.style.top = y + "px";
     });
 
-    angle += 0.005;
+    angle += 0.00355;
     requestAnimationFrame(positionItems);
   }
 
