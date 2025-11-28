@@ -14,7 +14,7 @@
 
 * {
     --bg: #121212;
-    --text: #ffffffd0;
+    --text: #ffffffda;
 
     font-family: 'Funnel Sans', sans-serif;
 }
@@ -52,8 +52,10 @@ img {
 }
 
 .content {
-    height: 100vh;
+    height: calc(100vh - 3rem);
     width: 57%;
+
+    padding-top: 3rem;
 
     display: flex;
     flex-direction: column;

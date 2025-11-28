@@ -20,21 +20,31 @@ a {
 
 
 .heading {
-    font-size: 5rem;
-    margin: 1rem;
+    margin: 0rem;
+    padding: 0;
 
     position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translateX(60%);
+    top: 4rem;
+    left: 5rem;
+
+
+    display: flex;
+    gap: 1rem;
 }
+
+.heading h1 {
+    font-size: 7rem;
+    margin: 0;
+    color: #f8c87930;
+}
+
 
 
 .circle {
     position: relative;
     width: 300px;
     height: 300px;
-    border: 4px solid #f8c8791a;
+    border: 4px solid #f8c8790a;
     border-radius: 50%;
 }
 
@@ -56,4 +66,31 @@ a {
     border-radius: 8px;
     border: 1px solid #f8c87920;
     box-shadow: 0 0 20px #f8c8790a;
+
+    background-color: var(--bg);
+}
+
+#circle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+    
+    padding: 0;
+    margin: 0;
+    width: 5rem;
+    height: 2rem;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    color: #f8c879e0;
+    font-size: 1.4rem;
+    font-weight: bold;
 }

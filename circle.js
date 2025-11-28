@@ -20,3 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   positionItems();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const topics = ["Programming", "Heidelberg University", "Arch btw", "Art", "Chess"]
+    description = document.getElementById("circle-center")
+    const interval = 1.8 // seconds
+    current_text_index = 0;
+
+    const ChangeText = () => {
+        description.innerHTML = topics[current_text_index]
+        current_text_index = (current_text_index + 1)% topics.length
+
+        setTimeout(ChangeText, interval * 1000)
+    }
+
+    ChangeText()
+});
