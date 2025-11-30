@@ -1,11 +1,11 @@
 
-.cv {
+.timeline {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.cv h1 {
+.timeline h1 {
     color: var(--main);
     padding-left: 2rem;
 }
