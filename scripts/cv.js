@@ -19,9 +19,9 @@ const connect = (a, b) => {
     const line = document.createElement('div');
     line.className = 'line';
     line.style.width = length + 'px';
-    line.style.height = '2px';
-    line.style.left = (x1 + 1) + 'px';
-    line.style.top = (y1 + 1) + 'px';
+    line.style.height = '4px';
+    line.style.left = (x1 + 2) + 'px';
+    line.style.top = (y1 + 2) + 'px';
     line.style.transform = `rotate(${angle}deg)`;
     graph.appendChild(line);
 }
