@@ -29,6 +29,19 @@ const connect = (a, b) => {
 
 const createGraph = () => {
     const node1 = document.getElementById("node1");
+    const node2 = document.getElementById("node2");
+    const node3 = document.getElementById("node3");
+    const node4 = document.getElementById("node4");
+
+    const anker1 = document.getElementById("anker1");
+    const anker2 = document.getElementById("anker2");
+    
+    connect(node1, anker1);
+    connect(anker1, node2);
+    connect(anker1, node3);
+    connect(node2, anker2);
+    connect(node3, anker2);
+    connect(anker2, node4);
 }
 
 
@@ -36,3 +49,10 @@ const createGraph = () => {
 document.addEventListener("DOMContentLoaded", () => {
     createGraph()
 });
+
+window.addEventListener("resize", () => {
+    // Remove all lines 
+    
+    document.querySelectorAll('.line').forEach(el => el.remove());
+    createGraph();
+})
