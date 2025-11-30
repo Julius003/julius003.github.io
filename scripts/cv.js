@@ -20,14 +20,16 @@ const connect = (a, b) => {
     line.className = 'line';
     line.style.width = length + 'px';
     line.style.height = '2px';
-    line.style.left = x1 + 'px';
-    line.style.top = y1 + 'px';
+    line.style.left = (x1 + 1) + 'px';
+    line.style.top = (y1 + 1) + 'px';
     line.style.transform = `rotate(${angle}deg)`;
     graph.appendChild(line);
 }
 
 
 const createGraph = () => {
+    const w = window.innerWidth;
+
     const node1 = document.getElementById("node1");
     const node2 = document.getElementById("node2");
     const node3 = document.getElementById("node3");
@@ -35,6 +37,13 @@ const createGraph = () => {
 
     const anker1 = document.getElementById("anker1");
     const anker2 = document.getElementById("anker2");
+
+    if (w <= 600) { // Contruct graph for mobile view
+        connect(node1, node2);
+        connect(node2, node3);
+        connect(node3, node4);
+        return
+    }
     
     connect(node1, anker1);
     connect(anker1, node2);
