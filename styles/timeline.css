@@ -116,6 +116,8 @@
     .node {
         position: static;
         transform: none;
+
+        box-shadow: 0 0 30px #00000000;
     }
 
     #node2,
