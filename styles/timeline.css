@@ -7,7 +7,10 @@
 
 .timeline h1 {
     color: var(--main);
-    padding-left: 2rem;
+    width: 100%;
+
+    font-size: 9vw;
+    text-align: center;
 }
 
 .graph {
@@ -103,10 +106,11 @@
 
 @media (max-width: 600px) {
     .graph {
-        height: 110vh;
+        height: 100vh;
         width: 100%;
         margin-right: 0;
         margin-left: 0;
+        margin-bottom: 0;
         gap: 2rem;
         display: flex;
         flex-direction: column;
