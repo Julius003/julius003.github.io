@@ -11,8 +11,8 @@
 .social-link {
     position: relative;
     overflow: hidden;
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
     
     border: 1px solid #f8c87930;
     border-radius: 15px;
@@ -37,8 +37,8 @@
 }
 
 .social-link img{
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
 
 }
 
