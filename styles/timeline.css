@@ -16,7 +16,6 @@
 .graph {
     position: relative;
     width: calc(100% - 100px);
-    height: 150vh;
     margin: 50px auto;
 }
 
@@ -106,11 +105,9 @@
 
 @media (max-width: 600px) {
     .graph {
-        height: 100vh;
         width: 100%;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 0;
         gap: 2rem;
         display: flex;
         flex-direction: column;
@@ -142,5 +139,11 @@
 
     .anker {
         display: none;
+    }
+}
+
+@media (min-width: 601px){
+    .graph {
+        height: 150vh;
     }
 }
