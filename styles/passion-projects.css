@@ -1,5 +1,146 @@
 .passion-projects {
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.passion-projects p {
+    width: 80%;
+    text-align: center;
+
+    font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.passion-projects img {
+    transform-origin: center;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 0;
+    border-radius: 20px;
+
+    z-index: 100;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.passion-projects img:hover {
+    scale: 1.01;
+}
+
+#art1 {
+    transform: translate(50%, -50%);
+}
+
+#art2 {
+    transform: rotate(-20deg) translate(-20%, -50%);
+}
+
+#art3 {
+    transform: rotate(21deg) translate(110%, -70%);
+}
+
+#art-ball {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #424242;
+
+    position: absolute;
+
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#art-ball.animate {
+    animation: 1.5s ball-enter forwards;
+    animation-delay: 0.7s;
+}
+
+#art1.animate, #art2.animate, #art3.animate {
+    animation: 1s img-scale forwards;
+    animation-delay: 1.6s;
 }
 
 
+.art-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+#art-header {
+    color: #f8c879;
+    font-size: 10vw;
+    opacity: 1;
+
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+    position: absolute;
+
+    right: 50%;
+    top: 0%;
+    transform: translate(50%, 0);
+
+    z-index: 200;
+}
+
+#art-header.animate {
+    animation: 3s fade ease-in forwards;
+    animation-delay: 2s;
+}
+
+
+@keyframes ball-enter {
+    0% {
+        transform: translate(50%, -50%);
+        animation-timing-function: ease-out;
+    }
+
+    30% {
+        transform: translate(50%, -500%);
+        animation-timing-function: ease-in;
+        background-color: #f8c879;
+    }
+    
+
+    60% {
+        transform: translate(50%, -50%);
+        width: 3rem;
+        height: 3rem;
+        opacity: 1;
+    }
+
+    100% {
+        width: 10rem;
+        height: 10rem;
+        opacity: 0;
+        display: none;
+        background-color: #f8c879;
+    }
+}
+
+@keyframes img-scale {
+    0% {
+        width: 0;
+        transform: rotate(0) translate(50%, -50%);
+    }
+
+    100% {
+        width: 14rem;
+    }
+}
+
+
+@keyframes fade { to { opacity: 1; } }
