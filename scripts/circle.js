@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll("#circle p");
+  const items = document.querySelectorAll("#circle a");
   let angle = 0;
 
   function positionItems() {

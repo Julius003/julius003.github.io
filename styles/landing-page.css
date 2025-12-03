@@ -34,7 +34,7 @@ p {
     border-radius: 50%;
 }
 
-.circle p {
+.circle a {
     position: absolute;
     transform: translate(-50%, -50%);
     color: #fff;
