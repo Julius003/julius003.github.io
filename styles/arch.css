@@ -1,0 +1,51 @@
+.arch {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arch-image{
+    width: 40%;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.arch-image img {
+    width: 100%;
+    scale: 1.02;
+    transform: translateY(3px);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.arch-image img:hover {
+    scale: 1.08;
+}
+
+
+.passion-header {
+    font-size: min(3rem, 8vw);
+    color: #ffffffa0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 600px){
+    .arch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arch-image {
+        width: 80%;
+    }
+
+    .arch-image:first-child {
+        display: none;
+    }
+}
