@@ -36,14 +36,17 @@
 
 #art1 {
     transform: translate(50%, -50%);
+    z-index: 10;
 }
 
 #art2 {
-    transform: rotate(-20deg) translate(-20%, -50%);
+    transform: rotate(-10deg) translate(-20%, -50%);
+    z-index: 15;
 }
 
 #art3 {
-    transform: rotate(21deg) translate(110%, -70%);
+    transform: rotate(11deg) translate(110%, -60%);
+    z-index: 5;
 }
 
 #art-ball {
