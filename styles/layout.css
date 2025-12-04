@@ -44,7 +44,9 @@ hr {
 
     border-radius: 50%;
 
-    color: #ffffff20
+    color: #ffffff20;
+    background-color: none;
+    background: none;
 }
 
 .section {
