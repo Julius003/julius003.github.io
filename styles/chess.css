@@ -1,3 +1,5 @@
 #chess {
-    height: 60vh
+    max-width: min(90vw, 60vh);
+
+    border-radius: 10px;
 }
