@@ -1,4 +1,33 @@
 #chess {
-    max-width: min(80vw, 60vh);
+    width: min(80vw, 60vh);
+    height: min(80vw, 60vh);
     border-radius: 10px;
+    object-fit: cover;
 }
+
+.chess {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    gap: 1rem;
+
+    justify-content: center;
+}
+
+.chess p {
+    width: 33%;
+}
+
+
+@media (max-width: 700px) {
+    .chess p {
+        width: 80%;
+    }
+
+    .chess {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
