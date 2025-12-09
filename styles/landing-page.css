@@ -30,7 +30,7 @@ p {
     position: relative;
     width: 300px;
     height: 300px;
-    border: 4px solid #f8c8790a;
+    border: 4px solid #ffffff0a;
     border-radius: 50%;
 }
 
@@ -54,8 +54,13 @@ p {
     box-shadow: 0 0 20px #f8c8790a;
 
     width: 4rem;
+    filter: saturate(0);
 
     background-color: var(--bg);
+}
+
+.circle img:hover {
+    filter: saturate(1);
 }
 
 #circle-center {
@@ -78,7 +83,8 @@ p {
     text-align: center;
 
 
-    color: #f8c879e0;
+    color: #f8efd9;
+    text-shadow: 0 0 30px var(--main);
     font-size: 1.4rem;
     font-weight: bold;
 }

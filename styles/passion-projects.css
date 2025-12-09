@@ -1,5 +1,5 @@
 .passion-projects {
-    min-height: 100vh;
+    min-height: 80vh;
 
     display: flex;
     flex-direction: column;
@@ -126,10 +126,15 @@
         opacity: 1;
     }
 
+    99% {
+        z-index: 100;
+    }
+
     100% {
         width: 10rem;
         height: 10rem;
         opacity: 0;
+        z-index: 0;
         display: none;
     }
 }
