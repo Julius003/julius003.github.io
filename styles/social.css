@@ -28,6 +28,8 @@
     align-items: center;
 
     transition: border-color .4s ease;
+
+    z-index: 100;
 }
 
 .social-card::before {
