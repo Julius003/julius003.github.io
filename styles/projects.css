@@ -1,3 +1,26 @@
 .projects {
     min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.projects .headline {
+    font-size: 4vw;
+    font-weight: bold;
+    color: var(--main);
+
+    width: 100%;
+    height: max(10rem, 18vw);
+    /* background-color: #ffffff1a; */
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
